@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AURUM LEGACY GLOBAL | Premier Engineering & Digital Strategy</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,900;1,900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,900;1,900&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -34,44 +37,86 @@
     </script>
 
     <style>
-        .sharp-border { border: 1.5px solid #C5A059; border-radius: 0 !important; }
-        .gold-gradient-bg { background: linear-gradient(135deg, #C5A059 0%, #E9D8A1 100%); }
-        .clip-path-hero { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
-        .hover-lift { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-        .hover-lift:hover { transform: translateY(-10px); box-shadow: 15px 15px 0px 0px rgba(197, 160, 89, 1); }
-        .tech-card:hover i { color: #0A0A0A; transform: scale(1.1); }
-        .tech-card:hover { background-color: #C5A059; color: #0A0A0A; border-color: #0A0A0A; }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #0A0A0A; }
-        ::-webkit-scrollbar-thumb { background: #C5A059; }
+        .sharp-border {
+            border: 1.5px solid #C5A059;
+            border-radius: 0 !important;
+        }
+
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #C5A059 0%, #E9D8A1 100%);
+        }
+
+        .clip-path-hero {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        .hover-lift {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-10px);
+            box-shadow: 15px 15px 0px 0px rgba(197, 160, 89, 1);
+        }
+
+        .tech-card:hover i {
+            color: #0A0A0A;
+            transform: scale(1.1);
+        }
+
+        .tech-card:hover {
+            background-color: #C5A059;
+            color: #0A0A0A;
+            border-color: #0A0A0A;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0A0A0A;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #C5A059;
+        }
     </style>
 </head>
 
-<body class="bg-softGrey text-onyx dark:bg-onyx dark:text-white font-body selection:bg-gold selection:text-onyx transition-colors duration-700">
+<body
+    class="bg-softGrey text-onyx dark:bg-onyx dark:text-white font-body selection:bg-gold selection:text-onyx transition-colors duration-700">
 
     <!-- 1. NAVIGATION -->
     <nav class="fixed w-full z-[999] bg-white/90 dark:bg-onyx/90 border-b-2 border-gold/20 backdrop-blur-xl">
         <div class="max-w-[1800px] mx-auto px-8 lg:px-16 flex justify-between items-center h-24">
             <div class="flex items-center space-x-4 cursor-pointer" onclick="window.scrollTo(0,0)">
-                <div class="w-14 h-14 bg-gold flex items-center justify-center font-black text-2xl text-onyx italic">AL</div>
+                <div class="w-14 h-14 bg-gold flex items-center justify-center font-black text-2xl text-onyx italic">AL
+                </div>
                 <div class="hidden sm:block">
-                    <span class="block text-2xl font-black uppercase tracking-tighter leading-none font-header">Aurum <span class="text-gold">Legacy</span></span>
-                    <span class="text-[9px] tracking-[0.4em] font-ui uppercase opacity-60">Engineering Excellence Worldwide</span>
+                    <span class="block text-2xl font-black uppercase tracking-tighter leading-none font-header">Aurum
+                        <span class="text-gold">Legacy</span></span>
+                    <span class="text-[9px] tracking-[0.4em] font-ui uppercase opacity-60">Engineering Excellence
+                        Worldwide</span>
                 </div>
             </div>
 
-            <div class="hidden xl:flex items-center space-x-12 font-ui font-bold text-[11px] uppercase tracking-[0.2em]">
+            <div
+                class="hidden xl:flex items-center space-x-12 font-ui font-bold text-[11px] uppercase tracking-[0.2em]">
                 <a href="#about" class="hover:text-gold transition">Our Mission</a>
                 <a href="#services" class="hover:text-gold transition">Ecosystem</a>
                 <a href="#tech" class="hover:text-gold transition">Technology</a>
                 <a href="#blueprint" class="hover:text-gold transition">Process</a>
                 <a href="#cases" class="hover:text-gold transition">Cases</a>
                 <a href="#careers" class="hover:text-gold transition">Join Guild</a>
-                <button onclick="document.documentElement.classList.toggle('dark')" class="w-10 h-10 border border-gold/30 rounded-none flex items-center justify-center">
+                <button onclick="document.documentElement.classList.toggle('dark')"
+                    class="w-10 h-10 border border-gold/30 rounded-none flex items-center justify-center">
                     <i class="fas fa-moon dark:hidden text-gold"></i>
                     <i class="fas fa-sun hidden dark:block text-gold"></i>
                 </button>
-                <a href="#contact" class="px-10 py-5 bg-onyx text-white dark:bg-gold dark:text-onyx border-2 border-onyx hover:bg-transparent hover:text-onyx dark:hover:text-white dark:hover:border-white transition-all">Capital Inquiry</a>
+                <a href="#contact"
+                    class="px-10 py-5 bg-onyx text-white dark:bg-gold dark:text-onyx border-2 border-onyx hover:bg-transparent hover:text-onyx dark:hover:text-white dark:hover:border-white transition-all">Capital
+                    Inquiry</a>
             </div>
         </div>
     </nav>
@@ -82,7 +127,8 @@
             <div class="lg:col-span-8">
                 <div class="inline-flex items-center space-x-4 mb-8">
                     <span class="h-1 w-12 bg-gold"></span>
-                    <span class="text-gold font-bold uppercase tracking-[0.4em] text-xs font-ui">Global Strategic Partners</span>
+                    <span class="text-gold font-bold uppercase tracking-[0.4em] text-xs font-ui">Global Strategic
+                        Partners</span>
                 </div>
                 <h1 class="text-6xl md:text-8xl lg:text-[110px] font-header font-black leading-[0.9] mb-12">
                     Architecting the <br>
@@ -90,21 +136,29 @@
                     <span class="text-gold">Digital Sovereignty.</span>
                 </h1>
                 <p class="text-xl md:text-2xl text-zinc-500 max-w-2xl mb-12 leading-relaxed">
-                    We deliver heavy-duty engineering, unbreakable security, and market-shaping intelligence for institutions that don't settle for mediocre. 
+                    We deliver heavy-duty engineering, unbreakable security, and market-shaping intelligence for
+                    institutions that don't settle for mediocre.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-6">
-                    <a href="#services" class="px-12 py-7 bg-gold text-onyx font-bold uppercase tracking-widest text-sm text-center border-2 border-gold hover:bg-transparent hover:text-gold transition-all">Deep Tech Explore</a>
-                    <a href="#contact" class="px-12 py-7 border-2 border-onyx dark:border-white text-onyx dark:text-white font-bold uppercase tracking-widest text-sm text-center hover:bg-gold hover:border-gold hover:text-onyx transition-all">Strategic Partner Request</a>
+                    <a href="#services"
+                        class="px-12 py-7 bg-gold text-onyx font-bold uppercase tracking-widest text-sm text-center border-2 border-gold hover:bg-transparent hover:text-gold transition-all">Deep
+                        Tech Explore</a>
+                    <a href="#contact"
+                        class="px-12 py-7 border-2 border-onyx dark:border-white text-onyx dark:text-white font-bold uppercase tracking-widest text-sm text-center hover:bg-gold hover:border-gold hover:text-onyx transition-all">Strategic
+                        Partner Request</a>
                 </div>
             </div>
-            
+
             <div class="lg:col-span-4 relative hidden lg:block">
                 <div class="border-4 border-gold p-6 relative">
-                    <img src="https://images.unsplash.com/photo-1573164713988-89a5114a99dc?auto=format&fit=crop&q=80&w=1000" class="grayscale w-full h-[600px] object-cover">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000"
+                        class="grayscale w-full h-[600px] object-cover">
                     <div class="absolute -top-10 -right-10 w-40 h-40 bg-gold z-[-1]"></div>
-                    <div class="absolute -bottom-10 -left-10 bg-onyx text-white p-12 w-80 dark:bg-white dark:text-onyx shadow-2xl">
+                    <div
+                        class="absolute -bottom-10 -left-10 bg-onyx text-white p-12 w-80 dark:bg-white dark:text-onyx shadow-2xl">
                         <span class="text-gold text-4xl font-bold font-header">250+</span>
-                        <p class="mt-4 uppercase font-bold text-[10px] tracking-widest leading-loose">Mission-Critical Systems Deployed Globally Since 2012.</p>
+                        <p class="mt-4 uppercase font-bold text-[10px] tracking-widest leading-loose">Mission-Critical
+                            Systems Deployed Globally Since 2012.</p>
                     </div>
                 </div>
             </div>
@@ -145,10 +199,15 @@
     <section id="about" class="py-32 bg-softGrey dark:bg-onyx">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 grid lg:grid-cols-2 gap-20 items-center">
             <div>
-                <h2 class="text-5xl md:text-7xl font-header font-black leading-tight mb-8">Not Just a Vendor. <br> Your <span class="text-gold">Vanguard.</span></h2>
+                <h2 class="text-5xl md:text-7xl font-header font-black leading-tight mb-8">Not Just a Vendor. <br> Your
+                    <span class="text-gold">Vanguard.</span>
+                </h2>
                 <div class="space-y-6 text-lg text-zinc-500 leading-relaxed">
-                    <p>At Aurum Legacy, we believe that software should be an asset, not a liability. For over a decade, we have partnered with market leaders to build infrastructures that are resilient, scalable, and inherently secure.</p>
-                    <p>Our philosophy is rooted in "Craftsmanship over Commoditization". We don't just write code; we architect empires.</p>
+                    <p>At Aurum Legacy, we believe that software should be an asset, not a liability. For over a decade,
+                        we have partnered with market leaders to build infrastructures that are resilient, scalable, and
+                        inherently secure.</p>
+                    <p>Our philosophy is rooted in "Craftsmanship over Commoditization". We don't just write code; we
+                        architect empires.</p>
                 </div>
                 <div class="grid grid-cols-2 gap-8 mt-12">
                     <div class="p-6 border-l-4 border-gold bg-white dark:bg-slateDark">
@@ -162,8 +221,10 @@
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-4">
-                <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&q=80&w=800" class="w-full h-80 object-cover border-2 border-gold">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" class="w-full h-80 object-cover mt-20 border-2 border-gold">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800"
+                    class="w-full h-80 object-cover border-2 border-gold">
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=800"
+                    class="w-full h-80 object-cover mt-20 border-2 border-gold">
             </div>
         </div>
     </section>
@@ -172,7 +233,8 @@
     <section id="services" class="py-32 px-8">
         <div class="max-w-[1800px] mx-auto">
             <div class="text-center mb-24">
-                <span class="text-gold font-bold uppercase tracking-[0.6em] text-[10px] mb-4 block">Comprehensive Portfolio</span>
+                <span class="text-gold font-bold uppercase tracking-[0.6em] text-[10px] mb-4 block">Comprehensive
+                    Portfolio</span>
                 <h2 class="text-6xl font-header font-black uppercase">Deep-Core Solutions</h2>
             </div>
 
@@ -181,54 +243,73 @@
                 <div class="bg-white dark:bg-slateDark p-16 hover-lift border border-gold/10">
                     <div class="text-gold text-5xl mb-8"><i class="fas fa-microchip"></i></div>
                     <h3 class="text-2xl font-black uppercase mb-6 tracking-tight">Custom Enterprise Systems</h3>
-                    <p class="text-zinc-500 mb-8 leading-relaxed">Developing monolithic migrations to microservice ecosystems that handle millions of requests with zero latency.</p>
+                    <p class="text-zinc-500 mb-8 leading-relaxed">Developing monolithic migrations to microservice
+                        ecosystems that handle millions of requests with zero latency.</p>
                     <ul class="text-[11px] font-bold uppercase tracking-widest space-y-4">
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Legacy Modernization</li>
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> ERP/CRM Integrations</li>
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Database Architecture</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Legacy
+                            Modernization</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> ERP/CRM
+                            Integrations</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Database
+                            Architecture</li>
                     </ul>
                 </div>
                 <!-- Service 2: Cloud Architect -->
                 <div class="bg-white dark:bg-slateDark p-16 hover-lift border border-gold/10">
                     <div class="text-gold text-5xl mb-8"><i class="fas fa-server"></i></div>
                     <h3 class="text-2xl font-black uppercase mb-6 tracking-tight">Cloud Sovereignty</h3>
-                    <p class="text-zinc-500 mb-8 leading-relaxed">Automated DevOps pipelines and high-security VPC architectures across AWS, GCP, and Azure platforms.</p>
+                    <p class="text-zinc-500 mb-8 leading-relaxed">Automated DevOps pipelines and high-security VPC
+                        architectures across AWS, GCP, and Azure platforms.</p>
                     <ul class="text-[11px] font-bold uppercase tracking-widest space-y-4">
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Kubernetes Orchestration</li>
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Serverless Deployment</li>
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> DR & Failover Management</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Kubernetes
+                            Orchestration</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Serverless
+                            Deployment</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> DR & Failover
+                            Management</li>
                     </ul>
                 </div>
                 <!-- Service 3: FinTech & Apps -->
                 <div class="bg-white dark:bg-slateDark p-16 hover-lift border border-gold/10">
                     <div class="text-gold text-5xl mb-8"><i class="fas fa-vault"></i></div>
                     <h3 class="text-2xl font-black uppercase mb-6 tracking-tight">FinTech & Asset Platforms</h3>
-                    <p class="text-zinc-500 mb-8 leading-relaxed">Building secure payment gateways, asset-trading terminals, and highly compliant fintech apps.</p>
+                    <p class="text-zinc-500 mb-8 leading-relaxed">Building secure payment gateways, asset-trading
+                        terminals, and highly compliant fintech apps.</p>
                     <ul class="text-[11px] font-bold uppercase tracking-widest space-y-4">
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> PCI-DSS Compliance</li>
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Wallet Integrations</li>
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Fraud Detection Logic</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> PCI-DSS
+                            Compliance</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Wallet
+                            Integrations</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Fraud Detection
+                            Logic</li>
                     </ul>
                 </div>
                 <!-- Service 4: Mobile Innovation -->
                 <div class="bg-white dark:bg-slateDark p-16 hover-lift border border-gold/10">
                     <div class="text-gold text-5xl mb-8"><i class="fas fa-mobile-screen"></i></div>
                     <h3 class="text-2xl font-black uppercase mb-6 tracking-tight">Hybrid & Native Mobile</h3>
-                    <p class="text-zinc-500 mb-8 leading-relaxed">Fluid user experiences in Native Swift/Kotlin and React Native with 60FPS performance stability.</p>
+                    <p class="text-zinc-500 mb-8 leading-relaxed">Fluid user experiences in Native Swift/Kotlin and
+                        React Native with 60FPS performance stability.</p>
                     <ul class="text-[11px] font-bold uppercase tracking-widest space-y-4">
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Low-Latency UI/UX</li>
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Biometric Auth</li>
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Offline Data Sync</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Low-Latency
+                            UI/UX</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Biometric Auth
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Offline Data
+                            Sync</li>
                     </ul>
                 </div>
                 <!-- Service 5: AI Core -->
                 <div class="bg-white dark:bg-slateDark p-16 hover-lift border border-gold/10">
                     <div class="text-gold text-5xl mb-8"><i class="fas fa-robot"></i></div>
                     <h3 class="text-2xl font-black uppercase mb-6 tracking-tight">Generative AI Labs</h3>
-                    <p class="text-zinc-500 mb-8 leading-relaxed">Training proprietary LLMs and integrating generative intelligence into existing workflows.</p>
+                    <p class="text-zinc-500 mb-8 leading-relaxed">Training proprietary LLMs and integrating generative
+                        intelligence into existing workflows.</p>
                     <ul class="text-[11px] font-bold uppercase tracking-widest space-y-4">
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Fine-Tuning Models</li>
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Predictive Analytics</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Fine-Tuning
+                            Models</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Predictive
+                            Analytics</li>
                         <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Neural NLP</li>
                     </ul>
                 </div>
@@ -236,11 +317,15 @@
                 <div class="bg-white dark:bg-slateDark p-16 hover-lift border border-gold/10">
                     <div class="text-gold text-5xl mb-8"><i class="fas fa-bullseye"></i></div>
                     <h3 class="text-2xl font-black uppercase mb-6 tracking-tight">Authority SEO Mastery</h3>
-                    <p class="text-zinc-500 mb-8 leading-relaxed">Technical SEO for heavy enterprise catalogs and programmatic content dominance.</p>
+                    <p class="text-zinc-500 mb-8 leading-relaxed">Technical SEO for heavy enterprise catalogs and
+                        programmatic content dominance.</p>
                     <ul class="text-[11px] font-bold uppercase tracking-widest space-y-4">
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Semantic Optimization</li>
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Core Web Vitals Peak</li>
-                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Content Cluster Logic</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Semantic
+                            Optimization</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Core Web Vitals
+                            Peak</li>
+                        <li class="flex items-center"><i class="fas fa-check-square mr-3 text-gold"></i> Content Cluster
+                            Logic</li>
                     </ul>
                 </div>
             </div>
@@ -252,10 +337,13 @@
         <div class="max-w-[1800px] mx-auto px-8 lg:px-16">
             <div class="flex flex-col md:flex-row justify-between items-end mb-24 border-b-2 border-gold pb-12">
                 <div>
-                    <h2 class="text-6xl md:text-8xl font-header font-black tracking-tighter">The <span class="text-gold italic">Stack.</span></h2>
-                    <p class="text-zinc-400 mt-6 font-ui font-bold uppercase tracking-widest">Industry leading weaponry for the digital age.</p>
+                    <h2 class="text-6xl md:text-8xl font-header font-black tracking-tighter">The <span
+                            class="text-gold italic">Stack.</span></h2>
+                    <p class="text-zinc-400 mt-6 font-ui font-bold uppercase tracking-widest">Industry leading weaponry
+                        for the digital age.</p>
                 </div>
-                <div class="text-gold flex space-x-12 mt-12 md:mt-0 font-ui text-[10px] font-black uppercase tracking-[0.5em]">
+                <div
+                    class="text-gold flex space-x-12 mt-12 md:mt-0 font-ui text-[10px] font-black uppercase tracking-[0.5em]">
                     <span>01 / FRONT</span>
                     <span>02 / BACK</span>
                     <span>03 / CLOUD</span>
@@ -265,51 +353,63 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
                 <!-- Grid items (24 items for completeness) -->
-                <div class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
+                <div
+                    class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
                     <i class="fab fa-react text-5xl text-gold group-hover:text-onyx transition-all duration-500"></i>
                     <span class="font-bold uppercase text-[10px] tracking-widest">React & Next.js</span>
                 </div>
-                <div class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
+                <div
+                    class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
                     <i class="fab fa-node-js text-5xl text-gold group-hover:text-onyx"></i>
                     <span class="font-bold uppercase text-[10px] tracking-widest">Node Engine</span>
                 </div>
-                <div class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
+                <div
+                    class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
                     <i class="fab fa-python text-5xl text-gold group-hover:text-onyx"></i>
                     <span class="font-bold uppercase text-[10px] tracking-widest">Python & AI</span>
                 </div>
-                <div class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
+                <div
+                    class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
                     <i class="fab fa-aws text-5xl text-gold group-hover:text-onyx"></i>
                     <span class="font-bold uppercase text-[10px] tracking-widest">AWS Cloud Ops</span>
                 </div>
-                <div class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
+                <div
+                    class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
                     <i class="fab fa-docker text-5xl text-gold group-hover:text-onyx"></i>
                     <span class="font-bold uppercase text-[10px] tracking-widest">K8s & Docker</span>
                 </div>
-                <div class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
+                <div
+                    class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
                     <i class="fab fa-rust text-5xl text-gold group-hover:text-onyx"></i>
                     <span class="font-bold uppercase text-[10px] tracking-widest">Rust Speed</span>
                 </div>
-                <div class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
+                <div
+                    class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
                     <i class="fab fa-github text-5xl text-gold group-hover:text-onyx"></i>
                     <span class="font-bold uppercase text-[10px] tracking-widest">CI/CD Sync</span>
                 </div>
-                <div class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
+                <div
+                    class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
                     <i class="fab fa-swift text-5xl text-gold group-hover:text-onyx"></i>
                     <span class="font-bold uppercase text-[10px] tracking-widest">Swift & Apple</span>
                 </div>
-                <div class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
+                <div
+                    class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
                     <i class="fab fa-android text-5xl text-gold group-hover:text-onyx"></i>
                     <span class="font-bold uppercase text-[10px] tracking-widest">Kotlin Android</span>
                 </div>
-                <div class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
+                <div
+                    class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
                     <i class="fas fa-database text-5xl text-gold group-hover:text-onyx"></i>
                     <span class="font-bold uppercase text-[10px] tracking-widest">PostgreSQL / NoSQL</span>
                 </div>
-                <div class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
+                <div
+                    class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
                     <i class="fab fa-salesforce text-5xl text-gold group-hover:text-onyx"></i>
                     <span class="font-bold uppercase text-[10px] tracking-widest">CRM/Salesforce</span>
                 </div>
-                <div class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
+                <div
+                    class="tech-card p-10 border border-gold/20 flex flex-col items-center justify-center space-y-4 transition-all duration-500 group">
                     <i class="fas fa-shield-alt text-5xl text-gold group-hover:text-onyx"></i>
                     <span class="font-bold uppercase text-[10px] tracking-widest">OWASP & Security</span>
                 </div>
@@ -350,44 +450,61 @@
     <section id="cases" class="py-32 px-8">
         <div class="max-w-[1800px] mx-auto grid lg:grid-cols-12 gap-10">
             <div class="lg:col-span-4 sticky top-32 h-fit">
-                <h2 class="text-6xl font-header font-black leading-tight mb-8 uppercase">Successful <br> <span class="text-gold">Missions.</span></h2>
-                <p class="text-zinc-500 text-lg mb-12">Witness how we transitioned standard brands into high-octane digital empires. These aren't just case studies—they're our legacy.</p>
-                <a href="#" class="px-10 py-5 border-2 border-gold text-gold font-bold uppercase text-xs tracking-widest hover:bg-gold hover:text-onyx transition-all">Request Full Dossier</a>
+                <h2 class="text-6xl font-header font-black leading-tight mb-8 uppercase">Successful <br> <span
+                        class="text-gold">Missions.</span></h2>
+                <p class="text-zinc-500 text-lg mb-12">Witness how we transitioned standard brands into high-octane
+                    digital empires. These aren't just case studies—they're our legacy.</p>
+                <a href="#"
+                    class="px-10 py-5 border-2 border-gold text-gold font-bold uppercase text-xs tracking-widest hover:bg-gold hover:text-onyx transition-all">Request
+                    Full Dossier</a>
             </div>
-            
+
             <div class="lg:col-span-8 grid md:grid-cols-2 gap-10">
                 <!-- Case 1 -->
                 <div class="group cursor-pointer">
-                    <div class="relative overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-1000">
-                        <img src="https://images.unsplash.com/photo-1551288049-bbda38a594a0?auto=format&fit=crop&q=80&w=800" class="w-full h-[400px] object-cover">
-                        <div class="absolute inset-0 bg-onyx/40 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div
+                        class="relative overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-1000">
+                        <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff0f?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-[400px] object-cover">
+                        <div class="absolute inset-0 bg-onyx/40 opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
                     </div>
                     <div class="pt-8">
-                        <span class="text-gold font-bold uppercase text-[10px] tracking-[0.3em]">Banking Tech / High Speed</span>
+                        <span class="text-gold font-bold uppercase text-[10px] tracking-[0.3em]">Banking Tech / High
+                            Speed</span>
                         <h4 class="text-3xl font-black uppercase mt-4">Neo-Fin Core 2.0</h4>
-                        <p class="mt-4 text-zinc-500 text-sm italic font-medium leading-relaxed">Scaling a transaction engine to 45k TPS for a major Asian Neo-bank. Reduction in latency by 400ms.</p>
+                        <p class="mt-4 text-zinc-500 text-sm italic font-medium leading-relaxed">Scaling a transaction
+                            engine to 45k TPS for a major Asian Neo-bank. Reduction in latency by 400ms.</p>
                     </div>
                 </div>
                 <!-- Case 2 -->
                 <div class="group cursor-pointer">
-                    <div class="relative overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-1000">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" class="w-full h-[400px] object-cover mt-20">
+                    <div
+                        class="relative overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-1000">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-[400px] object-cover mt-20">
                     </div>
                     <div class="pt-8">
-                        <span class="text-gold font-bold uppercase text-[10px] tracking-[0.3em]">Logistics / Realtime IoT</span>
+                        <span class="text-gold font-bold uppercase text-[10px] tracking-[0.3em]">Logistics / Realtime
+                            IoT</span>
                         <h4 class="text-3xl font-black uppercase mt-4">Global Tracker Pro</h4>
-                        <p class="mt-4 text-zinc-500 text-sm italic font-medium leading-relaxed">Connecting 120,000 active containers globally via custom neural-link IoT gateway. Predictive delay engine.</p>
+                        <p class="mt-4 text-zinc-500 text-sm italic font-medium leading-relaxed">Connecting 120,000
+                            active containers globally via custom neural-link IoT gateway. Predictive delay engine.</p>
                     </div>
                 </div>
                 <!-- Case 3 -->
                 <div class="group cursor-pointer">
-                    <div class="relative overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-1000">
-                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" class="w-full h-[400px] object-cover">
+                    <div
+                        class="relative overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-1000">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-[400px] object-cover">
                     </div>
                     <div class="pt-8">
-                        <span class="text-gold font-bold uppercase text-[10px] tracking-[0.3em]">Luxury Retail / E-Commerce</span>
+                        <span class="text-gold font-bold uppercase text-[10px] tracking-[0.3em]">Luxury Retail /
+                            E-Commerce</span>
                         <h4 class="text-3xl font-black uppercase mt-4">The Aurelian Hub</h4>
-                        <p class="mt-4 text-zinc-500 text-sm italic font-medium leading-relaxed">Developing an AI-driven storefront that grew revenue from $50M to $1.2B in 3 years with Zero Downtime.</p>
+                        <p class="mt-4 text-zinc-500 text-sm italic font-medium leading-relaxed">Developing an AI-driven
+                            storefront that grew revenue from $50M to $1.2B in 3 years with Zero Downtime.</p>
                     </div>
                 </div>
             </div>
@@ -398,29 +515,42 @@
     <section id="careers" class="py-32 bg-white dark:bg-slateDark border-y border-gold/10">
         <div class="max-w-7xl mx-auto px-8 lg:px-16 text-center">
             <h2 class="text-6xl font-header font-black mb-8 italic">The Guild Hiring.</h2>
-            <p class="text-zinc-500 text-lg mb-20 max-w-3xl mx-auto uppercase tracking-tighter font-bold">We don't look for resumes. We look for intellectual gladiators who thrive in chaotic technical battlefields.</p>
-            
+            <p class="text-zinc-500 text-lg mb-20 max-w-3xl mx-auto uppercase tracking-tighter font-bold">We don't look
+                for resumes. We look for intellectual gladiators who thrive in chaotic technical battlefields.</p>
+
             <div class="space-y-4">
                 <!-- Role -->
-                <div class="flex flex-col md:flex-row justify-between items-center p-12 bg-softGrey dark:bg-onyx border border-gold/10 group hover:bg-gold transition-all duration-500 cursor-pointer">
+                <div
+                    class="flex flex-col md:flex-row justify-between items-center p-12 bg-softGrey dark:bg-onyx border border-gold/10 group hover:bg-gold transition-all duration-500 cursor-pointer">
                     <div class="text-left">
-                        <span class="text-gold font-black group-hover:text-white uppercase text-[10px] tracking-[0.4em]">Infrastructure Team</span>
-                        <h4 class="text-3xl font-black mt-2 group-hover:text-onyx uppercase">Lead Cloud-Security Engineer</h4>
+                        <span
+                            class="text-gold font-black group-hover:text-white uppercase text-[10px] tracking-[0.4em]">Infrastructure
+                            Team</span>
+                        <h4 class="text-3xl font-black mt-2 group-hover:text-onyx uppercase">Lead Cloud-Security
+                            Engineer</h4>
                     </div>
                     <div class="mt-8 md:mt-0 flex space-x-12 items-center">
                         <span class="font-ui font-bold group-hover:text-onyx">$80K - $150K + EQUITY</span>
-                        <button class="px-8 py-3 bg-onyx text-white group-hover:bg-white group-hover:text-onyx font-bold uppercase text-xs">Initiate Protocol</button>
+                        <button
+                            class="px-8 py-3 bg-onyx text-white group-hover:bg-white group-hover:text-onyx font-bold uppercase text-xs">Initiate
+                            Protocol</button>
                     </div>
                 </div>
                 <!-- Role -->
-                <div class="flex flex-col md:flex-row justify-between items-center p-12 bg-softGrey dark:bg-onyx border border-gold/10 group hover:bg-gold transition-all duration-500 cursor-pointer">
+                <div
+                    class="flex flex-col md:flex-row justify-between items-center p-12 bg-softGrey dark:bg-onyx border border-gold/10 group hover:bg-gold transition-all duration-500 cursor-pointer">
                     <div class="text-left">
-                        <span class="text-gold font-black group-hover:text-white uppercase text-[10px] tracking-[0.4em]">Applied Intelligence</span>
-                        <h4 class="text-3xl font-black mt-2 group-hover:text-onyx uppercase">Generative AI Research Dev</h4>
+                        <span
+                            class="text-gold font-black group-hover:text-white uppercase text-[10px] tracking-[0.4em]">Applied
+                            Intelligence</span>
+                        <h4 class="text-3xl font-black mt-2 group-hover:text-onyx uppercase">Generative AI Research Dev
+                        </h4>
                     </div>
                     <div class="mt-8 md:mt-0 flex space-x-12 items-center">
                         <span class="font-ui font-bold group-hover:text-onyx">$120K - $200K + BONUS</span>
-                        <button class="px-8 py-3 bg-onyx text-white group-hover:bg-white group-hover:text-onyx font-bold uppercase text-xs">Initiate Protocol</button>
+                        <button
+                            class="px-8 py-3 bg-onyx text-white group-hover:bg-white group-hover:text-onyx font-bold uppercase text-xs">Initiate
+                            Protocol</button>
                     </div>
                 </div>
             </div>
@@ -429,19 +559,23 @@
 
     <!-- 10. DEEP CONTACT SYSTEM -->
     <section id="contact" class="py-32 bg-softGrey dark:bg-onyx">
-        <div class="max-w-[1400px] mx-auto px-8 lg:px-16 border-[10px] border-gold p-12 lg:p-24 relative overflow-hidden bg-white dark:bg-slateDark shadow-2xl">
+        <div
+            class="max-w-[1400px] mx-auto px-8 lg:px-16 border-[10px] border-gold p-12 lg:p-24 relative overflow-hidden bg-white dark:bg-slateDark shadow-2xl">
             <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-gold/5 rounded-full pointer-events-none"></div>
-            
+
             <div class="grid lg:grid-cols-12 gap-24 relative z-10">
                 <div class="lg:col-span-5">
-                    <h2 class="text-7xl font-header font-black mb-10 leading-none">Global <br>Command <br><span class="text-gold italic">Relay.</span></h2>
+                    <h2 class="text-7xl font-header font-black mb-10 leading-none">Global <br>Command <br><span
+                            class="text-gold italic">Relay.</span></h2>
                     <div class="space-y-12">
                         <div>
-                            <span class="block text-gold uppercase font-bold text-xs tracking-[0.3em] mb-4">India Hub</span>
+                            <span class="block text-gold uppercase font-bold text-xs tracking-[0.3em] mb-4">India
+                                Hub</span>
                             <p class="text-2xl font-bold font-header">DLF Cyber Park, Level 4, Gurgaon, NCR India</p>
                         </div>
                         <div>
-                            <span class="block text-gold uppercase font-bold text-xs tracking-[0.3em] mb-4">USA Nexus</span>
+                            <span class="block text-gold uppercase font-bold text-xs tracking-[0.3em] mb-4">USA
+                                Nexus</span>
                             <p class="text-2xl font-bold font-header">70th Floor, Wall St, Manhattan, NYC 10005</p>
                         </div>
                         <div class="flex space-x-6 text-2xl text-gold">
@@ -456,28 +590,44 @@
                 <div class="lg:col-span-7">
                     <form class="space-y-10">
                         <div class="grid md:grid-cols-2 gap-10">
-                            <div class="group border-b-2 border-zinc-200 dark:border-zinc-800 focus-within:border-gold transition-all">
-                                <label class="block text-[10px] uppercase font-bold tracking-widest text-gold mb-2">Identify Organization</label>
-                                <input type="text" placeholder="COMPANY NAME LLC" class="w-full py-4 bg-transparent outline-none font-bold text-lg">
+                            <div
+                                class="group border-b-2 border-zinc-200 dark:border-zinc-800 focus-within:border-gold transition-all">
+                                <label
+                                    class="block text-[10px] uppercase font-bold tracking-widest text-gold mb-2">Identify
+                                    Organization</label>
+                                <input type="text" placeholder="COMPANY NAME LLC"
+                                    class="w-full py-4 bg-transparent outline-none font-bold text-lg">
                             </div>
-                            <div class="group border-b-2 border-zinc-200 dark:border-zinc-800 focus-within:border-gold transition-all">
-                                <label class="block text-[10px] uppercase font-bold tracking-widest text-gold mb-2">Command Contact Email</label>
-                                <input type="email" placeholder="EXECUTIVE@DOMAIN.COM" class="w-full py-4 bg-transparent outline-none font-bold text-lg">
+                            <div
+                                class="group border-b-2 border-zinc-200 dark:border-zinc-800 focus-within:border-gold transition-all">
+                                <label
+                                    class="block text-[10px] uppercase font-bold tracking-widest text-gold mb-2">Command
+                                    Contact Email</label>
+                                <input type="email" placeholder="EXECUTIVE@DOMAIN.COM"
+                                    class="w-full py-4 bg-transparent outline-none font-bold text-lg">
                             </div>
                         </div>
-                        <div class="group border-b-2 border-zinc-200 dark:border-zinc-800 focus-within:border-gold transition-all">
-                            <label class="block text-[10px] uppercase font-bold tracking-widest text-gold mb-2">Service Frequency Interest</label>
-                            <select class="w-full py-4 bg-transparent outline-none font-bold text-lg uppercase appearance-none cursor-pointer">
+                        <div
+                            class="group border-b-2 border-zinc-200 dark:border-zinc-800 focus-within:border-gold transition-all">
+                            <label class="block text-[10px] uppercase font-bold tracking-widest text-gold mb-2">Service
+                                Frequency Interest</label>
+                            <select
+                                class="w-full py-4 bg-transparent outline-none font-bold text-lg uppercase appearance-none cursor-pointer">
                                 <option class="dark:text-onyx">Managed Core Systems (Retainer)</option>
                                 <option class="dark:text-onyx">Enterprise Migration (Fixed Project)</option>
                                 <option class="dark:text-onyx">Ad-Hoc Tactical Engineering</option>
                             </select>
                         </div>
-                        <div class="group border-b-2 border-zinc-200 dark:border-zinc-800 focus-within:border-gold transition-all">
-                            <label class="block text-[10px] uppercase font-bold tracking-widest text-gold mb-2">Project Magnitude Dossier</label>
-                            <textarea rows="4" placeholder="DESCRIBE YOUR SYSTEM WEAKNESSES OR MISSION REQUIREMENTS" class="w-full py-4 bg-transparent outline-none font-bold text-lg uppercase"></textarea>
+                        <div
+                            class="group border-b-2 border-zinc-200 dark:border-zinc-800 focus-within:border-gold transition-all">
+                            <label class="block text-[10px] uppercase font-bold tracking-widest text-gold mb-2">Project
+                                Magnitude Dossier</label>
+                            <textarea rows="4" placeholder="DESCRIBE YOUR SYSTEM WEAKNESSES OR MISSION REQUIREMENTS"
+                                class="w-full py-4 bg-transparent outline-none font-bold text-lg uppercase"></textarea>
                         </div>
-                        <button class="px-16 py-8 bg-onyx text-white dark:bg-gold dark:text-onyx font-black text-xs uppercase tracking-[0.5em] shadow-xl hover:scale-105 transition-all">Relay Project Dossier</button>
+                        <button
+                            class="px-16 py-8 bg-onyx text-white dark:bg-gold dark:text-onyx font-black text-xs uppercase tracking-[0.5em] shadow-xl hover:scale-105 transition-all">Relay
+                            Project Dossier</button>
                     </form>
                 </div>
             </div>
@@ -488,38 +638,58 @@
     <footer class="py-24 bg-onyx text-white border-t-8 border-gold px-8">
         <div class="max-w-[1800px] mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-20">
             <div>
-                <span class="text-4xl font-header font-black tracking-tighter uppercase mb-8 block italic">Aurum <span class="text-gold">Legacy.</span></span>
-                <p class="text-zinc-500 text-sm leading-relaxed mb-10 font-medium">Protecting the digital empires of tomorrow through rigorous engineering and gold-standard strategy. Est. 2012.</p>
+                <span class="text-4xl font-header font-black tracking-tighter uppercase mb-8 block italic">Aurum <span
+                        class="text-gold">Legacy.</span></span>
+                <p class="text-zinc-500 text-sm leading-relaxed mb-10 font-medium">Protecting the digital empires of
+                    tomorrow through rigorous engineering and gold-standard strategy. Est. 2012.</p>
                 <div class="h-2 w-20 bg-gold"></div>
             </div>
-            
+
             <div class="space-y-6">
                 <h6 class="text-gold uppercase text-[10px] font-black tracking-[0.5em] mb-10">Systems</h6>
-                <a href="#" class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">Quantum Core Dev</a>
-                <a href="#" class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">VPC Resilience Cloud</a>
-                <a href="#" class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">Fintech Gateway Build</a>
-                <a href="#" class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">Generative AI LLM-Hub</a>
+                <a href="#"
+                    class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">Quantum Core
+                    Dev</a>
+                <a href="#" class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">VPC
+                    Resilience Cloud</a>
+                <a href="#"
+                    class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">Fintech
+                    Gateway Build</a>
+                <a href="#"
+                    class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">Generative
+                    AI LLM-Hub</a>
             </div>
 
             <div class="space-y-6">
                 <h6 class="text-gold uppercase text-[10px] font-black tracking-[0.5em] mb-10">Protocols</h6>
-                <a href="#" class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">Privacy Governance</a>
-                <a href="#" class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">Cyber Resilience Law</a>
-                <a href="#" class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">Terms of Engagement</a>
-                <a href="#" class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">Ethics in Engineering</a>
+                <a href="#"
+                    class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">Privacy
+                    Governance</a>
+                <a href="#"
+                    class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">Cyber
+                    Resilience Law</a>
+                <a href="#"
+                    class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">Terms of
+                    Engagement</a>
+                <a href="#"
+                    class="block text-zinc-400 hover:text-white transition uppercase text-[11px] font-bold">Ethics in
+                    Engineering</a>
             </div>
 
             <div>
                 <h6 class="text-gold uppercase text-[10px] font-black tracking-[0.5em] mb-10">Subscription Relay</h6>
-                <p class="text-xs text-zinc-500 mb-6 font-bold italic">Get monthly high-tech engineering insights directly into your terminal.</p>
+                <p class="text-xs text-zinc-500 mb-6 font-bold italic">Get monthly high-tech engineering insights
+                    directly into your terminal.</p>
                 <div class="flex">
-                    <input type="email" placeholder="TERM: EMAIL_ADDR" class="w-full p-4 bg-zinc-900 border border-zinc-800 outline-none text-[10px] font-black">
+                    <input type="email" placeholder="TERM: EMAIL_ADDR"
+                        class="w-full p-4 bg-zinc-900 border border-zinc-800 outline-none text-[10px] font-black">
                     <button class="bg-gold p-4 text-onyx px-8 font-black">JOIN</button>
                 </div>
             </div>
         </div>
-        
-        <div class="max-w-[1800px] mx-auto mt-32 pt-10 border-t border-zinc-900 text-[9px] uppercase font-black tracking-[0.4em] text-zinc-600 text-center">
+
+        <div
+            class="max-w-[1800px] mx-auto mt-32 pt-10 border-t border-zinc-900 text-[9px] uppercase font-black tracking-[0.4em] text-zinc-600 text-center">
             &copy; 2024 Aurum Global Holdings LLC. Built for Immortality. [ST_ACTIVE_RELAY]
         </div>
     </footer>
@@ -547,4 +717,5 @@
         }
     </script>
 </body>
+
 </html>
