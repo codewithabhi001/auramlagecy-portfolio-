@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AURUM LEGACY GLOBAL | Premier Engineering & Digital Strategy</title>
+    <title>NEXAROVA CORE GLOBAL | Premier Engineering & Digital Strategy</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -91,9 +91,9 @@
     <nav class="fixed w-full z-[999] bg-white/95 dark:bg-onyx/95 border-b-2 border-gold/20 backdrop-blur-xl">
         <div class="max-w-[1800px] mx-auto px-6 lg:px-16 flex justify-between items-center h-24 relative">
             <a href="../index.html" class="flex items-center space-x-4 cursor-pointer">
-                <div class="w-14 h-14 bg-gold flex items-center justify-center font-black text-2xl text-onyx italic">AL</div>
+                <div class="w-14 h-14 bg-gold flex items-center justify-center font-black text-2xl text-onyx italic">NC</div>
                 <div class="hidden sm:block">
-                    <span class="block text-2xl font-black uppercase tracking-tighter leading-none font-header text-onyx dark:text-white">Aurum <span class="text-gold">Legacy</span></span>
+                    <span class="block text-2xl font-black uppercase tracking-tighter leading-none font-header text-onyx dark:text-white">Nexarova <span class="text-gold">Legacy</span></span>
                     <span class="text-[9px] tracking-[0.4em] font-ui uppercase opacity-60 text-onyx dark:text-white">Engineering Excellence</span>
                 </div>
             </a>
@@ -108,7 +108,7 @@
                 <a href="portfolio.html" class="hover:text-gold transition text-onyx dark:text-white">Cases & Portfolio</a>
                 <a href="careers.html" class="hover:text-gold transition text-onyx dark:text-white">Join Guild</a>
 
-                <button onclick="document.documentElement.classList.toggle('dark')" class="w-10 h-10 border border-gold/30 rounded-none flex items-center justify-center">
+                <button onclick="toggleDark()" class="w-10 h-10 border border-gold/30 rounded-none flex items-center justify-center">
                     <i class="fas fa-moon dark:hidden text-gold"></i>
                     <i class="fas fa-sun hidden dark:block text-gold"></i>
                 </button>
@@ -117,7 +117,7 @@
 
             <!-- Mobile Toggle -->
             <div class="xl:hidden flex items-center space-x-6">
-                <button onclick="document.documentElement.classList.toggle('dark')" class="w-10 h-10 border border-gold/30 rounded-none flex items-center justify-center">
+                <button onclick="toggleDark()" class="w-10 h-10 border border-gold/30 rounded-none flex items-center justify-center">
                     <i class="fas fa-moon dark:hidden text-gold"></i>
                     <i class="fas fa-sun hidden dark:block text-gold"></i>
                 </button>
@@ -189,7 +189,7 @@
     <footer class="py-24 bg-onyx text-white border-t-8 border-gold px-8 relative z-50">
         <div class="max-w-[1800px] mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-20">
             <div>
-                <span class="text-4xl font-header font-black tracking-tighter uppercase mb-8 block italic">Aurum <span class="text-gold">Legacy.</span></span>
+                <span class="text-4xl font-header font-black tracking-tighter uppercase mb-8 block italic">Nexarova <span class="text-gold">Legacy.</span></span>
                 <p class="text-zinc-500 text-sm leading-relaxed mb-10 font-medium">Protecting the digital empires of tomorrow through rigorous engineering and gold-standard strategy. Est. 2012.</p>
                 <div class="h-2 w-20 bg-gold"></div>
             </div>
@@ -223,12 +223,32 @@
         </div>
         
         <div class="max-w-[1800px] mx-auto mt-32 pt-10 border-t border-zinc-900 text-[9px] uppercase font-black tracking-[0.4em] text-zinc-600 text-center flex flex-col sm:flex-row justify-between items-center gap-6">
-            <span>&copy; 2026 Aurum Global Holdings LLC. Built for Immortality.</span>
+            <span>&copy; 2026 Nexarova Global Holdings LLC. Built for Immortality.</span>
             <span class="text-gold tracking-widest leading-loose bg-onyx px-4 py-2 border border-gold/20 shadow-lg">FOUNDER & CEO: ABHISHEK KUMAR | +91 9304514787</span>
         </div>
     </footer>
 
+    
     <script>
+        function toggleDark() {
+            document.documentElement.classList.toggle('dark');
+            if(document.documentElement.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Initialize from localstorage
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.remove('dark');
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            // Default to system preference if no localStorage set
+            document.documentElement.classList.add('dark');
+        }
+        
         // Smooth Animation Logic for Entrance
         const observerOptions = { threshold: 0.2 };
         const observer = new IntersectionObserver((entries) => {
@@ -244,12 +264,8 @@
             el.classList.add('transition-all', 'duration-1000', 'translate-y-20', 'opacity-0');
             observer.observe(el);
         });
-
-        // Initialize from localstorage
-        if (localStorage.getItem('theme') === 'dark') {
-            document.documentElement.classList.add('dark');
-        }
     </script>
+
 
     <script>
         // Mobile Menu Toggle Logic
